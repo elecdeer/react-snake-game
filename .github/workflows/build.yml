@@ -37,7 +37,7 @@ jobs:
           yarn install --frozen-lockfile
           yarn run build
         env:
-          CI: true
+#          CI: true
 
       # gh-pagesを使って公開
       - name: deploy
