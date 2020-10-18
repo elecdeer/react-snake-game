@@ -34,8 +34,8 @@ jobs:
       # パッケージのインストールとアプリのビルド
       - name: install and build
         run: |
-          npm ci
-          npm run build
+          yarn install --frozen-lockfile
+          yarn run build
         env:
           CI: true
 
