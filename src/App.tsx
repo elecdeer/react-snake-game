@@ -188,7 +188,7 @@ function App() {
 
       return nextBoard;
     });
-  }, [feedPos, headPos, snakeBody])
+  }, [feedPos, headPos, snakeBody, setBoard])
 
 
   useKey("s", () => {
@@ -217,7 +217,7 @@ function App() {
 
   useEffect(() => {
     setIntervalMs(1000 - snakeLength*30);
-  }, [snakeLength])
+  }, [snakeLength, setIntervalMs])
 
 
   useKey(" ", () => {

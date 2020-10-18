@@ -1,7 +1,7 @@
 import React from 'react';
 import Square from "./Square";
-import {useRecoilState, useRecoilValue} from "recoil";
-import {boardHeight, boardState, boardWidth, Facing, facingState} from "./App";
+import {useRecoilValue} from "recoil";
+import {boardHeight, boardState, boardWidth} from "./App";
 
 const Board = () => {
 	const boardMap = useRecoilValue(boardState);

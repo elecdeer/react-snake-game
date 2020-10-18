@@ -1,5 +1,5 @@
 import React from 'react';
-import {boardState, Facing, facingState, gameState, SquareState} from "./App";
+import {Facing, facingState, gameState, SquareState} from "./App";
 import {useRecoilValue} from "recoil";
 
 type Props = {
